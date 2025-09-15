@@ -24,8 +24,9 @@ body {
 /* A tarefa do Aluno 2 é definir a cor para darkgreen e transformar o texto em maiúsculas. */
 /* Isso entrará em conflito direto com a regra do Aluno 1 que definia a cor como 'blue'. */
 h2 {
-  color: blue;
-  padding-bottom: 10px;
+  color: darkgreen;
+  text-transform: uppercase;
+  padding-bottom: 10px; /* Mantive o padding para consistência */
 }
 
 /* Header Styles */
@@ -134,27 +135,34 @@ nav a:hover {
 
 /* Estilize a sua seção de palestrantes como preferir */
 
-/* NOVOS ESTILOS ADICIONADOS PELO ALUNO 4 */
-/* Estilização do Footer */
-footer {
-  background-color: #2c3e50; /* Mesma cor do header para consistência */
-  color: white;
+/* NOVOS ESTILOS ADICIONADOS PELO ALUNO 2 */
+/* Estilização da Seção Agenda */
+#agenda {
+  padding: 4rem 2rem;
+  background-color: #ffffff; /* Fundo branco para destacar a seção */
   text-align: center;
-  padding: 2rem 1rem;
-  margin-top: 2rem; /* Adiciona um espaço acima do rodapé */
 }
 
-footer p {
-  margin-bottom: 1rem;
+#agenda h2 {
+  margin-bottom: 2.5rem; /* Aumenta o espaço abaixo do título da agenda */
 }
 
-.social-links a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
+.agenda-list {
+  list-style: none; /* Remove os marcadores padrão da lista */
+  max-width: 800px;
+  margin: 0 auto; /* Centraliza a lista na seção */
+  text-align: left; /* Alinha o texto da lista à esquerda */
 }
 
-.social-links a:hover {
-  color: #3498db;
+.agenda-list li {
+  background-color: #f9f9f9;
+  border-left: 5px solid #27ae60; /* Uma borda verde para dar destaque */
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.agenda-list li strong {
+  color: #333;
+  margin-right: 15px;
 }
